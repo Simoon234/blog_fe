@@ -1,0 +1,117 @@
+.blog__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.blog__header h2 {
+    font-size: 4rem;
+    color: #c8641e;
+    margin-bottom: 1.5rem;
+}
+
+
+.blogs__content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.blogs__card {
+    background-color: #ffffff;
+    max-width: 320px;
+    border-radius: 9px;
+    padding: 1rem;
+    margin-bottom: 20px;
+    margin-right: 2rem;
+    box-shadow: rgb(172, 174, 166) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.blogs__card-ImageHeader {
+    position: relative;
+    transition: 250ms ease-in-out;
+    cursor: pointer;
+}
+
+
+.blogs__card-ImageHeader img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 250px;
+    border-radius: 8px;
+    z-index: 100;
+}
+
+
+.blogs__card-ImageHeader:hover img {
+    opacity: 0.4;
+}
+
+
+.blogs__card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.blogs__card-info p {
+    cursor: pointer;
+}
+
+.blogs__card-info-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.blogs__card-info-right span {
+    color: orangered;
+}
+
+.blogs__card-tittle {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.blogs__card-description {
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    word-break: break-all;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.category button {
+    margin-right: 1rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: inherit;
+    background-color: #edfbed;
+    font-size: 1rem;
+    transition: all 0.4s cubic-bezier(1,-0.16,.6,1.35);
+    border: none;
+}
+
+.category button:hover{
+    background-color: #d67736;
+    cursor: pointer;
+}
+
+.category button:active, .category button:focus{
+    outline: none;
+    border: none;
+}
