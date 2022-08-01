@@ -13,22 +13,11 @@
   * [Screenshots](#camera-screenshots)
   * [Tech Stack](#space_invader-tech-stack)
   * [Features](#dart-features)
-  * [Color Reference](#art-color-reference)
-  * [Environment Variables](#key-environment-variables)
 - [Getting Started](#toolbox-getting-started)
   * [Prerequisites](#bangbang-prerequisites)
   * [Installation](#gear-installation)
-  * [Running Tests](#test_tube-running-tests)
   * [Run Locally](#running-run-locally)
-  * [Deployment](#triangular_flag_on_post-deployment)
-- [Usage](#eyes-usage)
-- [Roadmap](#compass-roadmap)
-- [Contributing](#wave-contributing)
-  * [Code of Conduct](#scroll-code-of-conduct)
-- [FAQ](#grey_question-faq)
-- [License](#warning-license)
 - [Contact](#handshake-contact)
-- [Acknowledgements](#gem-acknowledgements)
 
   
 
@@ -100,15 +89,6 @@ Install blog with npm
   yarn install blog
   cd blog
 ```
-   
-<!-- Running Tests -->
-### :test_tube: Running Tests
-
-To run tests, run the following command
-
-```bash
-  yarn test test
-```
 
 <!-- Run Locally -->
 ### :running: Run Locally
@@ -146,21 +126,6 @@ To deploy this project run
 ```bash
   yarn deploy
 ```
-
-
-<!-- Usage -->
-## :eyes: Usage
-
-Use this space to tell a little more about your project and how it can be used. Show additional screenshots, code samples, demos or link to other resources.
-
-
-```javascript
-import Component from 'my-project'
-
-function App() {
-  return <Component />
-}
-
 
 <!-- Contact -->
 ## :handshake: Contact
