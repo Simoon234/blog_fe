@@ -37,7 +37,6 @@ export const Register = () => {
                 })
             });
             const data = await res.json();
-            console.log(data)
             if(data.statusCode !== 400) {
                 setTimeout(() => {
                     data && window.location.replace("/login");

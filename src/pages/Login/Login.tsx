@@ -1,5 +1,5 @@
 import "./login.css";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {SyntheticEvent, useContext, useState} from "react";
 import {Context} from "../../context/Contex";
 import {Suc} from "../Register/Success";
@@ -10,6 +10,7 @@ export const Login = () => {
     const [err, setError] = useState(false);
     const {dispatch} = useContext(Context);
     const [loading, setLoading] = useState(false);
+    const navigate = useNavigate();
 
     const handleSubmit = async (e: SyntheticEvent) => {
         e.preventDefault();
@@ -27,8 +28,11 @@ export const Login = () => {
                 },
                 credentials: "include"
             });
+
+
            const data = await res.json();
-            if (!data.error) {
+
+           if (!data.error) {
                 dispatch({
                     type: "LOGIN_SUCCESS", payload: {
                         id: data.id,
@@ -37,7 +41,7 @@ export const Login = () => {
                         avatar: data.authorUrl
                     }
                 });
-                window.location.replace('/');
+                navigate('/', {replace: true})
             } else {
                 setError(true);
                 setLoading(false);
