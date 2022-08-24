@@ -118,15 +118,6 @@ Start the server
 ```
 
 
-<!-- Deployment -->
-### :triangular_flag_on_post: Deployment
-
-To deploy this project run
-
-```bash
-  yarn deploy
-```
-
 <!-- Contact -->
 ## :handshake: Contact
 
